@@ -1,0 +1,40 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <img src="img/logo-bmw.png" alt="" width="40" height="30" class="d-inline-block align-text-top" />
+      <span class="fs-5">BEKATUL MUNJUL WIDARA</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tentang">Tentang Kita</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Produk Bisnis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hubungi Kita</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY === 0) {
+      navbar.classList.add("navbar-transparent");
+      navbar.classList.remove("scrolled");
+    } else {
+      navbar.classList.remove("navbar-transparent");
+      navbar.classList.add("scrolled");
+    }
+  });
+</script>
